@@ -79,6 +79,8 @@
 
     productBloc.loadProduct(10);
     productBloc.saveProduct({ id: 10, name: 'OLED TV' });
+    productBloc.notifyClients();
+
     cartBloc.onAddToCart(10);
 
 
